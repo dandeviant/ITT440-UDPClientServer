@@ -10,5 +10,5 @@ Objective is to communicate between two Linux machines; client and server.
 
 
 Language used:\
-Client: Python\
-Server: C
+Client : Python\
+Server : C
