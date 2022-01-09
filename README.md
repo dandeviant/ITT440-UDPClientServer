@@ -1,6 +1,9 @@
 # UDP Server Client
 ITT440 UDP Server Client
 
+Writer: Daniel\
+Contributor: Muiz, Azim
+
 =======================
 
 Client Server programs using User Datagram Protocol
