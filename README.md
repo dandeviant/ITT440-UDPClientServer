@@ -1,5 +1,5 @@
-# UDP Server Client
-ITT440 UDP Server Client
+# UDP Client Server
+ITT440 UDP Client Server 
 
 Writer: Daniel\
 Contributor: Muiz, Azim
