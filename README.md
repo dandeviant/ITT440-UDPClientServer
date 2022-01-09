@@ -1,4 +1,4 @@
-# UDPServerClient
+# UDP Server Client
 ITT440 UDP Server Client
 
 =======================
