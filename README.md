@@ -8,7 +8,11 @@ Contributor: Muiz, Azim
 
 Client Server programs using User Datagram Protocol
 
-Objective is to communicate between two Linux machines; client and server.
+Objective:
+- Server send current time to client
+- Client display time sent by server
+- Client send thankyou message
+- Server receive thankyou message and display the message
 
 
 
