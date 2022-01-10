@@ -2,9 +2,9 @@
 
 Modify the code to fulfill question needs
 
-UPDATE:\
+UPDATE:
 - Server can now send time and date to client
 - Client can send thankyou message to server
 
-TODO:\
+TODO:
 - Rearrange your code
