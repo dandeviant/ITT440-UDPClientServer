@@ -16,6 +16,6 @@ Objective:
 
 
 
-Language used:\
-- Client : Python\
+Language used:
+- Client : Python
 - Server : C
