@@ -10,9 +10,11 @@
    
 #define PORT    12000
 #define MAXLINE 1024
+
+#define LINE_BUFSIZE 128
    
 // Driver code
-int main() {
+int main(int argc, char *argv[]) {
     int sockfd;
     char buffer[1024] = {0};
     char *hello = "Hello from server";
@@ -41,17 +43,35 @@ int main() {
     }
        
     int len, n;
+    char line[1024];
+    FILE *pipe;
 
     len = sizeof(cliaddr);  //len is value/result
    
-    n = recvfrom(sockfd, (char *)buffer, MAXLINE, 
+    n = recvfrom(sockfd, buffer, MAXLINE, 
                 MSG_WAITALL, ( struct sockaddr *) &cliaddr,
                 &len);
 
-    printf("Client : %s\n", buffer);
-    sendto(sockfd, (const char *)hello, strlen(hello), 
+    // *hello =
+
+    printf("\nClient : %s\n", buffer);
+    
+    
+    
+
+    // Get a pipe where the output from the scripts comes in
+    pipe = popen("date", "r");
+    if (pipe == NULL) {  // check for errors 
+        perror(argv[0]); // report error message 
+        return 1;        // return with exit code indicating error
+    }
+
+    fgets(line, LINE_BUFSIZE, pipe);
+    printf("Script output line : %s", line);
+    sendto(sockfd, (const char *)line, strlen(line), 
         MSG_CONFIRM, (const struct sockaddr *) &cliaddr,
             len);
+    
 
        
     return 0;
