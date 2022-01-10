@@ -7,8 +7,7 @@ Contributor: Muiz, Azim
 =======================
 
 Client Server programs using User Datagram Protocol\
-So far, the codes are only usable in Ubuntu/Debian-based Linux. Haven't tried on any other OSs yet\
-
+So far, the codes are only usable in Ubuntu/Debian-based Linux. Haven't tried on any other OSs yet
 
 
 Objective:
