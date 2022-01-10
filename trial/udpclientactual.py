@@ -61,7 +61,7 @@ def main():
     msg = bytes(ip, "utf-8")
     client.sendto(msg, addr)
 
-    data, addr = client.recvfrom(1024) # buffer size is 1024 bytes
+    data, addr = client.recvfrom(2048) # buffer size is 1024 bytes
     
 
     print("Sent by Server: %s" %(data.decode()))
